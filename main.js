@@ -4,16 +4,16 @@
         let $button = $(e.currentTarget)
         let speed = $button.attr('data-speed')
         $button.addClass('active')
-            .siblings('.active').removeClass('active')
+          .siblings('.active').removeClass('active')
         switch (speed) {
             case 'slow':
-                duration = 100;
+                duration = 100
                 break;
-            case 'normas':
-                duration = 50;
+            case 'normal':
+                duration = 50
                 break;
             case 'fast':
-                duration = 10;
+                duration = 10
                 break;
         }
     })
